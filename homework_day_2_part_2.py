@@ -28,6 +28,25 @@ print(f'''+{szerokość}+''')
 
 
 
+# 6. Napisz program do przeliczania liczby zapisanej w formacie binarnym na system dziesiętny.
+# Załóż że wpisywane jest zawsze tylko 6 znaków 0/1, np 000110, 110010, 111111 etc.
+
+
+print("Kalkulator liczb z systemu binarnego na dziesiętny.")
+wartość_1 = input("Podaj liczbę w systemie binarnym: ")
+wartość_1 = wartość_1[0:6]
+
+wzór_0 = int(wartość_1[0]) * 2 ** 0
+wzór_1 = int(wartość_1[1]) * 2 ** 1
+wzór_2 = int(wartość_1[2]) * 2 ** 2
+wzór_3 = int(wartość_1[3]) * 2 ** 3
+wzór_4 = int(wartość_1[4]) * 2 ** 4
+wzór_5 = int(wartość_1[5]) * 2 ** 5
+wzór = wzór_0 + wzór_1 + wzór_2 + wzór_3 + wzór_4 + wzór_5
+print(f'''Obliczenia: {wartość_1}*2^0 + {wartość_1}*2^1 + {wartość_1}*2^2 + {wartość_1}*2^3 + {wartość_1}*2^4 + {wartość_1}*2^5.''')
+print(f'''Twoja liczba w systemie dziesiętnym to {wzór}.''')
+
+
 
 
 # 7. Napisz program do rozpoznawania czy podana liczba jest parzysta czy nie.
