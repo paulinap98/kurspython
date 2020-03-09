@@ -1,3 +1,35 @@
+# 5. Napisz program, który rysuje prostokąt o zadanych rozmiarach (wysokość i szerokość) za pomocą znaków:
+#     | (bok)
+#     - (góra/dół)
+#     + (wierzchołek)
+#     czyli np:
+#     +-------+
+#     |       |
+#     |       |
+#     +-------+
+
+print('Narysuj prostokąt o określonym rozmiarze.')
+wysokość = input('Podaj wysokość prostokąta: ')
+szerokość = input('Podaj szerokość prostokąta: ')
+wysokość = int(wysokość)
+szerokość = int(szerokość)
+
+wolne_miejsce = ' ' * szerokość
+szerokość = "-" * szerokość
+wysokość_1 = "|"
+wysokość_2 = f'''{wysokość_1}{wolne_miejsce}{wysokość_1}'''
+
+
+print("Tak wygląda twój prostokąt: ")
+print(f'''+{szerokość}+''')
+for wysokość_1 in range(wysokość):
+    print(wysokość_2)
+print(f'''+{szerokość}+''')
+
+
+
+
+
 # 7. Napisz program do rozpoznawania czy podana liczba jest parzysta czy nie.
 
 print("Sprawdź czy dana liczba jest parzysta.")
