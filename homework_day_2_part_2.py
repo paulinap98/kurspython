@@ -59,24 +59,35 @@ if liczba_1 % 2 == 0:
 else:
     print("Liczba jest nieparzysta.")
 
+    
+    
 # 8. Napisz program do sprawdzania czy liczba jest podzielna przez 3 lub 5 lub 7
 
 print("Sprawdź czy dana liczba jest podzielna przez 3 lub 5 lub 7.")
 liczba_2 = input("Podaj liczbę: ")
 liczba_2 = int(liczba_2)
-if liczba_2 % 3 == 0:
-    print("Liczba jest podzielna przez 3.")
+a = 3
+b = 5
+c = 7
+if liczba_2 % a == 0 and liczba_2 % b == 0 and liczba_2 % c == 0:
+    print(f'''Liczba jest podzielna przez {a}, {b} i {c}.''')
+elif liczba_2 % a == 0 and liczba_2 % b == 0 and liczba_2 % c != 0:
+    print(f'''Liczba jest podzielna przez {a} i {b}.''')
+elif liczba_2 % b == 0 and liczba_2 % c == 0 and liczba_2 % a != 0:
+    print(f'''Liczba jest podzielna przez {b} i {c}.''')
+elif liczba_2 % a == 0 and liczba_2 % c == 0 and liczba_2 % b != 0:
+    print(f'''Liczba jest podzielna przez {a} i {c}.''')
+elif liczba_2 % a == 0:
+    print(f'''Liczba jest podzielna tylko przez {a}.''')
+elif liczba_2 % b == 0:
+    print(f'''Liczba jest podzielna tylko przez {b}.''')
+elif liczba_2 % c == 0:
+    print(f'''Liczba jest podzielna tylko przez {c}.''')
 else:
-    print("Liczba nie jest podzielna przez 3.")
-if liczba_2 % 5 == 0:
-    print("Liczba jest podzielna przez 5.")
-else:
-    print("Liczba nie jest podzielna przez 5.")
-if liczba_2 % 7 == 0:
-    print("Liczba jest podzielna przez 7.")
-else:
-    print("Liczba nie jest podzielna przez 7.")
+    print(f'''Liczba nie jest podzielna przez żadne z tych liczb.''')
 
+    
+    
 # 9. Napisz program do sprawdzania czy liczba jest podzielne przez 3 i 5 i 7\
 
 print("Sprawdź czy dana liczba jest podzielna przez 3 i 5 i 7.")
