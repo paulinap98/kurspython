@@ -108,3 +108,5 @@ if data % 4 == 0 and data % 100 != 0 or data % 400 == 0:
     print("Podany rok jest rokiem przestępnym.")
 else:
     print("Podany rok nie jest rokiem przestępnym.")
+
+
