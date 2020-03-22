@@ -103,7 +103,8 @@ else:
 print("Sprawdź czy podany rok jest rokiem przestępnym. ")
 data = input("Podaj datę: ")
 data = int(data)
-if data % 4 == 0 and data % 100 != 0 or data % 400 == 0:
+if data % 4 == 0 and (data % 100 != 0 or data % 400 == 0):
     print("Podany rok jest rokiem przestępnym.")
 else:
     print("Podany rok nie jest rokiem przestępnym.")
+
