@@ -1,7 +1,8 @@
 from moduly.calculators import calculatorCtoF, calculatorFtoC, pole_kola
-from moduly.calculators import binarytodecimal, rokprzestepny
+from moduly.calculators import rokprzestepny
 from moduly.numbers import pierwsza_ostatnia_cyfra, parzysta, podzielnaprzez3lub5lub7, podzielnaprzez3i5i7
 from moduly.drawnings import rectangle
+from moduly.binarne import binarytodecimal
 
 # 1. Program do przeliczania stopni Celsjusza na Fahrenheita (wyświetlając wzór i kolejne obliczenia)
 # wzór °F = (°C × 1.8) + 32

@@ -29,7 +29,7 @@ while wybor is None:
             from moduly.calculators import pole_kola
             pole_kola()
         elif wybor == 4:
-            from moduly.calculators import binarytodecimal
+            from moduly.binarne import binarytodecimal
             binarytodecimal()
         elif wybor == 5:
             from moduly.calculators import rokprzestepny
@@ -52,6 +52,9 @@ while wybor is None:
             from moduly.numbers import podzielnaprzez3i5i7
             podzielnaprzez3i5i7()
         elif wybor == 12:
+            from moduly.calculators import wiekpsa
+            wiekpsa()
+        elif wybor == 13:
             print("Mam nadzieję, że jeszcze wrócisz! Miłego dnia :)")
             break
     except:
