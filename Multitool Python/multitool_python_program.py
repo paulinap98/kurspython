@@ -12,23 +12,6 @@ from moduly.calculators import wiekpsa
 from moduly.numbers import parzysta
 import random
 
-# print('Witaj w Multitool Python Program!'
-#       '\n Wybierz program, który Cię interesuje'
-#       '\n - 1) Kalkulator stopni Celcjusza na Fahrenheita'
-#       '\n - 2) Kalkulator stopni Fahrenheita na Celcjusza'
-#       '\n - 3) Obliczanie pola powierzchni koła o zadanym promieniu'
-#       '\n - 4) Przeliczanie liczby zapisanej w formacie binarnym na system dziesiętny (w trakcie tworzenia)'
-#       '\n - 5) Program do sprawdzania czy podany rok jest rokiem przestępnym'
-#       '\n - 6) Program, który rysuje prostokąt o zadanych rozmiarach'
-#       '\n - 7) Program rysujący piramidę o określonej wysokości'
-#       '\n - 8) Program, który podaje pierwszą i ostatnią cyfrę podanej liczby'
-#       '\n - 9) Program do rozpoznawania czy podana liczba jest parzysta czy nie'
-#       '\n - 10) Program do sprawdzania czy liczba jest podzielna przez 3 lub 5 lub 7'
-#       '\n - 11) Program do sprawdzania czy liczba jest podzielna przez 3 i 5 i 7'
-#       '\n - R) Wybierz program losowo'
-#       '\n - X) Wyjście z programu')
-# program = input("Co chcesz zrobić? Twój wybór: ")
-
 
 def multitool():
     print('Witaj w Multitool Python Program!'
