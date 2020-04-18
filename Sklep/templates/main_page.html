@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<br lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        {% block tytul_strony %}
+            MINI SKLEP
+        {% endblock %}
+    </title>
+    <style>
+        a {
+           display: block;
+           margin-bottom: 2px;
+          }
+        h1 {
+            text-align: center;
+            color: navy;
+            text-decoration: underline;
+            font-size: 45 px;
+            font-family: "Times New Roman", Times, serif;
+            }
+        p {
+           text-align: left;
+           color: navy;
+           font-family: "Times New Roman", Times, serif;
+           }
+    </style>
+</head>
+<>
+    <h1>Witaj w mini sklepie!</h1>
+    <h4>
+        Mini sklep oferuje najpopularniejsze tytuły książek w formacie tradycyjnym
+        jak i ebooki
+    </h4>
+    <p><b>Wybierz co chcesz zrobić:</b></p>
+    <a href="{{url_for('items')}}">Pokaż produkty</a><br/>
+    <a href="{{url_for('cart')}}">Pokaż mój koszyk</a><br/>
+</body>
+</html>
