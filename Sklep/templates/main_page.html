@@ -8,6 +8,20 @@
         {% endblock %}
     </title>
     <style>
+    img {
+         margin: 10px;
+        }
+    html, body{
+                margin:0;
+                padding:0;
+                background-color: #f0d6db;
+                font-size: 12px;
+                line-height: 1.4em;
+                }
+            body{
+                text-shadow: rgba(0,0,0,.01) 0 0 1px;
+                font-family: 'Inconsolata', sans-serif;
+                }
         a {
            display: block;
            margin-bottom: 2px;
@@ -17,12 +31,22 @@
             color: navy;
             text-decoration: underline;
             font-size: 45 px;
-            font-family: "Times New Roman", Times, serif;
+            font-family: 'Inconsolata', sans-serif;
+            }
+        h4 {
+            text-align: left;
+            color: black;
+            font-size: 30 px;
+            color: navy;
+            font-family: 'Inconsolata', sans-serif;
+            margin: 10px;
             }
         p {
            text-align: left;
            color: navy;
-           font-family: "Times New Roman", Times, serif;
+           font-size: 35 px;
+           font-family: 'Inconsolata', sans-serif;
+           margin: 10px;
            }
     </style>
 </head>
@@ -31,8 +55,23 @@
         Mini sklep oferuje najpopularniejsze tytuły książek w formacie tradycyjnym
         jak i ebooki
     </h4>
-    <p><b>Wybierz co chcesz zrobić:</b></p>
-    <a href="{{url_for('items')}}">Pokaż produkty</a><br/>
-    <a href="{{url_for('cart')}}">Pokaż mój koszyk</a><br/>
+    <ul>
+        <li><a href="{{url_for('cart')}}">Pokaż mój koszyk</a><br/></li>
+    </ul>
+    <p>
+        <b>Wybierz produkt, który cię interesuje:</b>
+        <br>
+        <br>
+        <br>
+        <a href="{{url_for('show_product_potop')}}">
+            <img title="Potop, Henryk Sienkiewicz" src="https://cdn.galleries.smcloud.net/t/galleries/gf-L9vW-2GYn-9RTx_potop-henryk-sienkiewicz-320x400-nocrop.jpg">
+        </a>
+        <a href="{{url_for('show_product_krzyzacy')}}">
+            <img title="Krzyżacy, Henryk Sienkiewicz" src="https://www.granice.pl/okladka/250/374/e562fc181f5cc61b0049968298f538fd.jpeg">
+        </a>
+        <a href="{{url_for('show_product_wladca_pierscieni')}}">
+           <img title="Władca Pierścieni, J.R.R Tolkien" src="https://pdf-x.pl/image/Wladca-Pierscieni-Tom-1-Bractwo-pierscienia-Tom-2-Dwie-wieze-Tom-3-Powrot-krola-okladka.jpg"
+        </a>
+    </p>
 </body>
 </html>

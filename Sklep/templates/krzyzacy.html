@@ -3,7 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <title>Krzyżacy MINI SKLEP</title>
+    <style>
+    html, body{
+                margin:0;
+                padding:0;
+                background-color: #f0d6db;
+                font-size: 12px;
+                line-height: 1.4em;
+                }
+            body{
+                text-shadow: rgba(0,0,0,.01) 0 0 1px;
+                font-family: 'Inconsolata', sans-serif;
+                }
+    </style>
 </head>
+    <h1>Witaj w mini sklepie!</h1>
+    <h4>
+        Mini sklep oferuje najpopularniejsze tytuły książek w formacie tradycyjnym
+        jak i ebooki
+    </h4>
+    <ul>
+        <li><a href="{{url_for('cart')}}">Pokaż mój koszyk</a><br/></li>
+        <li><a href="{{url_for('main_page')}}">Wróć na stonę główną</a><br></li>
+    </ul>
 <body>
     Szczegóły książki
 </body>
